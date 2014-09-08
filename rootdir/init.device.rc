@@ -2,6 +2,8 @@ on boot
     # Vibrator
     chown system system /sys/devices/virtual/timed_output/vibrator/level
     chmod 666 /sys/devices/virtual/timed_output/vibrator/level
+    # chown SDcard
+    chown -R 2800 2800 /mnt/media_rw/sdcard0
 
 on post-fs
     # Touch firmware update
